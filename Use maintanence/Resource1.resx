@@ -124,6 +124,6 @@
     <value>Keresztnév</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Vezetéknév</value>
+    <value>utónév</value>
   </data>
 </root>

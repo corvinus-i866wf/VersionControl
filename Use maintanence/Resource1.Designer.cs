@@ -79,7 +79,7 @@ namespace Use_maintanence {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vezetéknév.
+        ///   Looks up a localized string similar to utónév.
         /// </summary>
         internal static string LastName {
             get {
