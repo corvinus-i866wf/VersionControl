@@ -30,8 +30,7 @@ namespace Use_maintanence
         {
             var u = new Entities.User()
             {
-                LastName = textBox2.Text,
-                FirstName = textBox1.Text
+                FullName = string.Join(textBox1.Text, textBox2.Text)
             };
             users.Add(u);
         }
