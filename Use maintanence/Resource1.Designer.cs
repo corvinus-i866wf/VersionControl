@@ -70,6 +70,15 @@ namespace Use_maintanence {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Törlés.
+        /// </summary>
+        internal static string Del {
+            get {
+                return ResourceManager.GetString("Del", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Keresztnév.
         /// </summary>
         internal static string FirstName {

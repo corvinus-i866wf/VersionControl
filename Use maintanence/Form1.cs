@@ -21,6 +21,7 @@ namespace Use_maintanence
             label2.Text = Resource1.LastName;
             button1.Text = Resource1.Add;
             button2.Text = Resource1.Write;
+            button3.Text = Resource1.Del;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,6 +52,21 @@ namespace Use_maintanence
                     sw.Write(";");
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+            using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+            {
+                
+                foreach (var s in users)
+                {
+                    users.Remove(s);
+                }
+            }
+
         }
     }
 }

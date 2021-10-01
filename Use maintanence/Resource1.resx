@@ -120,6 +120,9 @@
   <data name="Add" xml:space="preserve">
     <value>Hozzáadás</value>
   </data>
+  <data name="Del" xml:space="preserve">
+    <value>Törlés</value>
+  </data>
   <data name="FirstName" xml:space="preserve">
     <value>Keresztnév</value>
   </data>
