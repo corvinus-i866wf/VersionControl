@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
     {
         
         RealEstateEntities context = new RealEstateEntities();
-
+        //aaa//
         List<Flat> lakasok;
         Excel.Application xlApp;
         Excel.Workbook xlWB;
