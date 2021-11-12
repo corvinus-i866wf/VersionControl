@@ -46,6 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstractions\IToyFactory.cs" />
+    <Compile Include="Abstractions\Toy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\Ball.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\BallFactory.cs" />
+    <Compile Include="Entities\Car.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\CarFactory.cs" />
+    <Compile Include="Entities\Present.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\PresentFactory.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +94,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kepek\auto.jpg" />
+    <Content Include="Kepek\Auto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
